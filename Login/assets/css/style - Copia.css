@@ -1,0 +1,249 @@
+body{
+position: relative;
+width: 1440vw;
+height: 1024vh;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(180deg, #123F4E 0%, rgba(41, 86, 103, 0.65) 55.73%, rgba(91, 144, 157, 0.3) 89.61%, rgba(141, 171, 192, 0.1) 100%)
+,rgba(119, 208, 215, 0.71);
+}
+.box{  /*efeito onde ficar o box de cadastramento*/
+position: absolute;
+width: 1050vw;
+height: 680vh;
+left: 400vw;
+top: 200vh;
+background: #FFFFFF;
+box-shadow: 0px 0px 19px #1A5173;
+border-radius: 20px;
+
+}
+.entrar{ /*botão entrar*/
+position: absolute;
+width: 126vw;
+height: 48vh;
+left: 30vw;
+top: 40vh;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 48vh;
+color: #61BCC3;
+}
+.inputBox{ /*coloca label dentro do box em ordem*/
+box-sizing: border-box;
+position: absolute;
+width: 349vw;
+height: 48vh;
+left: 50vw;
+top: 200vh;
+background: rgba(231, 237, 237, 0.5);
+border: 1vh solid #537B8D;
+border-radius: 7px;
+
+}
+.inputemail{ /*espaço entre o logo do email e as letras*/
+    padding-left: 50vw;
+}
+.inputsenha{ /*espaço entre o logo da senha e as letras*/
+    padding-left: 50vw;
+    top: 200vh;
+
+}
+    
+.InputBox{ /*coloca label dentro do box em ordem*/
+box-sizing: border-box;
+position: absolute;
+width: 349vw;
+height: 48vh;
+left: 50vw;
+top: 130vh;
+background: rgba(231, 237, 237, 0.5);
+border: 1px solid #537B8D;
+border-radius: 7px;
+}
+.logo{ /*Aqui fica a logo da empresa*/
+position: absolute;
+width: 98vw;
+height: 82vh;
+left: 600vw;
+top: 30vh;
+}
+.h1{ /*nome da empresa*/
+position: absolute;
+width: 158vw;
+height: 21vh;
+left: 700vw;
+top: 50vh;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48vh;
+display: flex;
+align-items: center;
+letter-spacing: 0.08em;
+color: #000000;
+}
+.h2{ /*Que bom ter voçê de*/
+position: absolute;
+width: 386vw;
+height: 96vh;
+left: 630vw;
+top: 100vh;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 48vh;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.08em;
+color: #000000;
+}
+.social{ /* fica a img do social*/
+position: absolute;
+left: 480vw;
+top: 250vh;
+}
+.entrarbutton{ /* fica o botão entrar*/
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 0px;
+gap: 10px;
+position: absolute;
+width: 349vw;
+height: 51vh;
+left: 50vw;
+top: 320vh;
+color: #FFFFFF;
+background: #3593AA;
+border: 1px solid #3593AA;
+border-radius: 7px;
+}
+.h3{ /*aqui fica o texto: Esqueci minha senha*/
+position: absolute;
+width: 131vw;
+height: 19vh;
+left: 270vw;
+top: 250vh;
+font-family: 'Rounded Mplus 1c';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 19vh;
+display: flex;
+align-items: center;
+text-align: center;
+color: #12274F;
+}
+.h4{ /* fica o texto: voltar!*/
+position: absolute;
+width: 386vw;
+height: 96vh;
+left: 715vw;
+top: 150vh;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 48vh;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.08em;
+color: #000000;
+}
+.h5{ /*Aqui fica o texto: Não tem conta ? Registre-se*/
+position: absolute;
+width: 275vw;
+height: 25vh;
+left: 100vw;
+top: 390vh;
+font-family: 'Rounded Mplus 1c';
+font-style: bold;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25vh;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+.h6{/*Aqui fica o texto: Ou*/
+position: absolute;
+width: 42vw;
+height: 25vh;
+left: 190vw;
+top: 430vh;
+font-family: 'Rounded Mplus 1c';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25vh;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+.google{ /*Aqui fica o botão do google*/
+position: absolute;
+width: 349vw;
+height: 57vh;
+left: 50vw;
+top: 470vh;
+background: #5A869A;
+color: #FFFFFF;
+border-radius: 7px;
+}
+.facebook{ /*Aqui fica o botão do facebook*/
+position: absolute;
+width: 349vw;
+height: 57vh;
+left: 50vw;
+top: 550vh;
+background: #5A869A;
+color: #FFFFFF;
+border-radius: 7px;
+}
+input{/*Aqui fica o input do email e da senha*/
+box-sizing: border-box;
+position: absolute;
+width: 349vw;
+height: 48vh;
+color: #000000;
+left: 50vw;
+top: 120vh;   
+background: rgba(231, 237, 237, 0.5);
+border: 1px solid #537B8D;
+border-radius: 7px;
+}
+.senha{ /*Aqui fica a logo da senha*/
+    position: absolute;
+    left: 65vw;
+    top: 215vh;
+}
+.email{ /*Aqui fica a logo do email*/
+    position: absolute;
+    left: 65vw;
+    top: 135vh;
+} 
+.googleimg{ /*Aqui fica a logo do google*/
+    position: absolute;
+    top: 485vh;
+    left: 100vw;
+    padding-left: 30px;
+}
+.faceimg{ /*Aqui fica a logo do facebook*/
+    position: absolute;
+    top: 563vh;
+    left: 100vw;
+    padding-left: 30vw;
+    padding-left: 30vw;
+}
+

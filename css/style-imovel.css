@@ -1,0 +1,256 @@
+.button{
+    display: flex;
+  width: 35vh;
+  height:7vh;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 2.2vh;
+  color:var(--w);
+  font-weight: bold;
+  border-radius: 0.5vh;
+  background: var(--n3);
+  transition: all .2s linear;
+}
+.button:hover{
+    border: 0.3vh solid var(--n3);
+    background-color: var(--w);
+    color: var(--n3);
+}
+.header-imovel{
+  position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 3vh auto;
+    padding: 3vh auto;
+    transition: all .2s linear;
+    border-bottom: 0.3vh solid var(--n3);
+}
+.header-imovel-right{
+  display: flex;
+gap: 2vh;
+justify-content: center;
+transition: all .2s linear;
+align-items: center;
+}
+
+.header-imovel-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--n3);
+    transition: all .2s linear;
+    
+}
+.header-imovel-left > h1 > img{
+    width: 8vh;
+    height:8vh;
+    margin-left:2vh;
+}
+.header-imovel-left > h1{
+    display: flex;
+    align-items: center;
+    color: var(--n5);
+    font-size: 8vh;
+    
+}
+.header-imovel-left > h3{
+  color: var(--n6);
+  font-size: 4vh;
+}  
+
+.main-area{
+  position: absolute;
+display: flex;
+flex-direction: column;
+background-color: var(--n0);
+width: 90%;
+padding: 5vh;
+margin-top: 25vh;
+align-items: center;
+border-radius: 2vh;
+box-shadow: 0px 4px 4px 0px rgba(83, 123, 141, 0.46) inset;
+}
+.main-position{
+display: flex;
+justify-content: center;
+}
+.article-area{
+position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 3vh auto;
+    padding: 5vh auto;
+    transition: all .2s linear;
+    color: var(--n3);
+    align-items:flex-start;
+}
+.perfil-icon{
+display: flex;
+height: 10vh;
+padding-bottom: 2vh;
+border-bottom: 0.3vh solid var(--n3);
+align-content: center;
+justify-content: flex-start;
+align-items: center;
+gap: 1vh;
+}
+.perfil-icon> section> h1{
+color: var(--n6);
+font-size: 2.5vh;
+}
+.article-imovel-right{
+display: flex;
+position: relative;
+align-items:flex-start;
+gap: 1vh;
+
+
+transition: all .2s linear;
+flex-direction: column;
+}
+.footer-imovel{
+height: 50vh;
+background-color: var(--n3);
+display: flex;
+}
+.article-imovel-right:hover{
+transform: scale(1.05);
+}
+.article-imovel-right > section > h1{
+color: var(--n6);
+
+}
+.article-imovel-right > section > p{
+color: var(--n6);
+font-size: 5vh;
+
+}
+.article-imovel-left{
+display: flex;
+position: relative;
+flex-direction: row;
+}
+.help-config{
+display: flex;
+align-items: center;
+gap: 2vh;
+}
+.help-config > a > svg{
+
+transition: all .2s linear;
+}
+.help-config > a > svg:hover{
+transform: scale(1.1);
+}
+
+.img-imovel{
+display: flex;
+width: 100%;
+height: 30vh;
+border-radius:1vh;
+transition: all .2s linear;
+}
+.img-imovel:hover{
+transform: scale(1.03);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin-bottom: 5vh;
+}
+.pilula-imovel{
+display: flex;
+background-color: var(--n3);
+padding: 1vh 2vh;
+border-radius: 0.5vh;
+margin: 1vh;
+color: var(--w);
+transition: all .2s linear;
+}
+.pilula-imovel:hover{
+transform: scale(1.05);
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area-layout-data{
+  display: flex;
+  gap: 2vh;
+  flex-wrap: wrap;
+  margin: 3vh auto;
+}
+.layout-data{
+  display: flex;
+  width: 50%;
+  height: 6vh;
+  align-items: center;
+  gap: 2vh;
+  flex-shrink: 0;
+  border-radius: 1vh;
+background: #FFF;
+  color: #2C5567;
+font-family: Inter;
+font-size: 2vh;
+font-style: normal;
+font-weight: 400;
+
+}
+.layout-data a{
+  display: flex;
+width: 30%;
+height: 6vh;
+gap: 1vh;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 1vh;
+background: #3593AA;
+color: #FFF;
+font-size: 2vh;
+font-style: normal;
+font-weight: 400;
+
+}
+
+swiper-slide img {
+  border-radius: 0.5vh;
+  display: block;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  box-shadow: 1vh 1vh 1vh 1vh rgba(0, 0, 0, 0.393);
+}
+@media (max-width: 110vh){
+.article-area{
+flex-direction: column;
+}
+.article-imovel-right{
+margin-top: 5vh;
+}
+.header-imovel{
+display: flex;
+position: relative;
+flex-direction: column;
+align-items: center;
+gap: 5vh;
+
+}
+.header-imovel-right{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+.header-imovel-left h1 > img{
+  display: none;
+}
+}

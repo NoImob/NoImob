@@ -1,0 +1,73 @@
+.pdp-img{
+    display: flex;
+    position: relative;
+    width: 90vw;
+        height: 80vh;
+        border-radius: 1.6vh;
+        object-fit: cover;
+        margin: 0vh auto;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.accordion{
+    width: 22vw !important;
+}
+.comodo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+
+}
+.aluguel-area{
+    display: flex;
+    flex-direction: column;
+    border: 0.5vh var(--n0) solid;
+    padding: 2vh;
+    border-radius: 0.5vh;
+}
+.aluguel-area >  h2{
+    color: var(--n3) !important;
+}
+.area-dados-proprietario{
+        display: flex;
+        height: 10vh;
+        padding-bottom: 2vh;
+        border-bottom: 0.2vh solid var(--n0);
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vh;
+    
+}
+.body-pdp{
+    overflow-x:hidden !important;
+    width: 100vw !important;
+    height: 100%;
+  }
+.contatos{
+    display: flex;
+    width: 216px;
+    height: 46px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+/* Button whatsapp*/
+font-family: 'Inter', var(--font-p) !important;
+font-size: 16px !important;
+font-style: normal !important;
+font-weight: 700 !important;
+line-height: 1.8vh !important; /* 125% */
+gap: 1.09vh;
+}
+.contatos:hover{
+background-color: var(--n3) !important;
+color: white !important;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: var(--n4) !important;
+}
+
+
+  
+  

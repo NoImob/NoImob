@@ -1,0 +1,215 @@
+
+
+body{
+    margin: 0;  
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background: linear-gradient(180deg, #123F4E 0%, rgba(41, 86, 103, 0.65) 55.73%, rgba(91, 144, 157, 0.3) 89.61%, rgba(141, 171, 192, 0.1) 100%), rgba(119, 208, 215, 0.78);
+    text-decoration: none;
+    
+
+}
+
+.main-login{
+    width: 120vh;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    
+}
+.left-login{
+    width: 70vh;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-login{
+    width: 90vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center; /* eixo X*/
+    align-items: center; /* eixo Y*/
+}
+
+.card-login{
+    position: absolute;
+    width: 50vh;
+    height: 70vh;
+    left: 15vh;
+    top: 25vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*um ficar embaixo do outro*/
+    padding: 3vh 4vh;/* se refere ao eixo y o segundo valor ao eixo x*/
+
+    background: #FFFFFF;
+    box-shadow: 0vh 0vh 5vh #0c2a3d;
+    border-radius: 2vh;
+}
+.card-login > h1{
+
+    position: absolute;
+    width: 40vh;
+    height: 10vh;
+    left: 0.2vh;
+    top: 4vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vh;
+    line-height: 4vh;
+    letter-spacing: 0.02vh;
+    color: #61BCC3;
+    font-weight: 10;
+    margin: 0;
+
+}
+
+.card-login > h3{
+    position: absolute;
+    width: 40vh;
+    height: 7vh;
+    left: 6.5vh;
+    top: 6.5vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8vh;
+    line-height: 16px;
+
+    display: flex;
+    align-items: center;
+    color: #1A5173;
+}
+
+.textfield{
+    width: 100;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* eixo X inverteu por conta do flex-direction*/
+    justify-content: center; /* eixo Y inverteu por conta do flex-direction*/
+    margin: 1vh ;
+}
+
+.textfield > input{
+    width: 35.5vh;
+    height: 3vh;
+    justify-items: center;
+
+    border: none;
+    border-radius: 1.2vh;
+    padding: 2.6vh;
+    background: rgba(231, 237, 237, 0.5);
+    border: 0.1vh solid #537B8D;
+    border-radius:0.7vh;
+    margin-top: 0.5vh;
+
+    font-size: 1.8vh;
+    color: #131212;
+    outline: none;
+    box-sizing: border-box;
+    align-items: center;
+}
+.textfield > label {
+    color: #f1eee8;
+    margin-bottom: 9px;
+}
+
+.textfield > input::placeholder{
+    color: #031216;
+}
+.input-login{
+    display: flex;
+	align-items: center;
+}
+
+#botao{
+
+    position: absolute;
+    width: 35.5vh;
+    height: 6vh;
+    left: 70px;
+    top: 61.5vh;
+
+    color: #f7f5f4;
+    text-transform: uppercase; /*deixar letra separada*/
+    font-weight: 600;
+    letter-spacing: 0.09vh;
+    background: #3593AA;
+    border-radius: 7px;
+    border: none;
+    gap: 10px;
+    font-size: 17px;
+    font-style: normal;
+    cursor: pointer;
+    align-items: center;
+    list-style: none;
+   
+    }
+    
+    #botao:hover{
+        background: #2c7d91;
+        border-radius: 7px;
+        transition: 0.5s ease-out;
+    }
+    
+h1{
+    font-size:30px;
+    text-align:center;
+}
+
+.login{ 
+    width: 375px;
+    left: 40px;
+    top: 13px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 17px 0px;
+    text-align:center;    
+}
+.login nav a{
+    text-decoration: none;
+    color: #080808;  
+}
+.texto{ /*texto com o nome: Gerenciamento, Praticidade e Segurança*/
+    color: #3593AA;
+    font-size: 15px;
+}
+.navbarcadastros{
+    display: flex;
+    padding-top: 16vh;
+    padding-left: 13vh;
+    
+    
+}
+.navbarcadastros a{
+    color: #ffffffc9;
+    font-size: 2vh;
+    font-weight: 500;
+    padding: 1vh 2vh;
+    margin: 0vh 3vh;
+    border-bottom: #20d9e370 0.3vh solid ;
+    transition: all .50s ease;
+    font-size: 2vh;
+}
+.navbarcadastros a:hover{
+    color:var(--text-color);
+    font-weight: 500;
+    border-bottom: #27f4ff 0.3vh solid ;
+}
+.navbarcadastros a.active{
+    color:var(--text-color);
+    font-weight: 500;
+    border-bottom: #27f4ff 0.3vh solid ;
+    
+}
+.form{
+    padding-top: 5vh;
+    left:0.9vh;
+}

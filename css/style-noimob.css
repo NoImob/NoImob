@@ -1,0 +1,435 @@
+/* Classe de Layout e posicionamento */
+  .main-area{
+      position:relative;
+      width: 100vw;
+      padding: 0vh 5vw;
+    }
+   .article-area{
+    width: 90vw;
+   }
+    .grid3x3{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5vw;
+    }
+  .row-noimob{
+    width: 100vw;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 0;
+      gap: 1vw;
+  }
+  .row-mid-content{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .row-noimob-space-between{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding-left: 0;
+    gap: 1vw;
+  }
+  .collum-noimob{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .row{
+    
+    flex-wrap: wrap !important;
+  }  
+  .col{
+    height: 3vh;
+    width: 10vw !important;
+  }
+  .col-8{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width:60vw !important;
+    height:85vh !important;
+    border-right: solid .2vh var(--n0);
+  }
+  .col-4{
+    display: flex;
+    flex-direction: column !important;
+    width: 30vw !important;
+    height:85vh !important;
+  }
+.mb-0{
+  margin-bottom: 0px !important;
+}
+.mb-1{
+  margin-bottom: 10px !important;
+}
+
+.mb-2{
+  margin-bottom: 20px !important;
+}
+.mb-3{
+  margin-bottom: 30px !important;
+}
+.mb-4{
+  margin-bottom: 40px !important;
+}
+.mb-5{
+  margin-bottom: 50px !important;
+}
+  .top-0{
+    top: 0 !important;
+  }
+  .top-3{
+    top: 3vh !important;
+  }
+  .top-5{
+    top: 5vh !important;
+  }
+  .top-10{
+    top: 10vh !important;
+  }  
+  .top-15{
+    top: 15vh !important;
+  }  
+  .top-12{
+    top: 12vh !important;
+  }
+  .top-13{
+    top: 13vh !important;
+  }
+  .top-20{
+    top: 20vh !important;
+  }  
+  .top-25{
+    top: 25vh !important;
+  }
+  .top-28{
+    top: 28vh !important;
+  }
+  .top-30{
+    top: 30vh !important;
+  }
+  .top-35{
+    top: 35vh !important;
+  }
+  .padding-0{
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .height-100{
+    height: 100vh;
+  }
+  .height-30{
+    height: 30vh;
+  }
+  .al-it-center{
+    display: flex;
+    align-items: center;
+  }
+  /*Classes de botões âncoras*/
+  .button-destaque{
+    display: flex;
+width: 20vw;
+height: 8vh;
+padding: 5px 15px;
+justify-content: center;
+align-items: center;
+gap: 2vh;
+flex-shrink: 0;
+border-radius: 0.5vh;
+color: var(--w);
+transition: all 1s linear;
+background: linear-gradient(180deg, #3593AA 0%, #267487 100%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .button-destaque:hover{
+    background: linear-gradient(180deg, #2b778a 0%, #1d5968 100%);
+  }
+
+  .button-noimob{
+    text-decoration: none;
+    border: none;
+    transition: all .2s linear;
+  }
+  /*Butão de que move o icone*/
+  .cssbuttons-io-button {
+    background: linear-gradient(90deg, rgb(8, 42, 80) 0%, rgb(21, 100, 112) 35%, rgba(35,153,178,1) 100%)
+    !important;
+    height: 7vh;
+  width: 22.5vh;
+  border-radius: 0.8vh;
+  color: white !important;
+  font-family: 'Inter', sans-serif !important;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 2vh;
+  font-weight: 500;
+  border-radius: 0.6vh;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--n6);
+  overflow: hidden;
+  position: relative;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 2vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5vh;
+  width: 4.5vh;
+
+  border-radius: 0.6vh;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--p4);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+#voltar-btn .icon{
+    rotate: 180deg;
+  }
+.form-floating > label{
+    font-size: 2.8vh !important;
+}
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color:var(--p4);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+  /*Butões de contato para o pdp - Inicio*/
+  .btn-contact {
+    width: 4vw;
+    height: 4vw;
+    /* border: none;*/
+    background-color: var(--n6);
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .5s;
+    border: none;
+  }
+  .logoIcon {
+    fill: white;
+  }
+  
+  .tooltip-noimob {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    z-index:99999;
+    background-color:var(--n6);
+    color: white;
+    width: 10vw;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+  }
+  
+ 
+  .button-p{
+    display: flex;
+width:45vh;
+height: 10vh;
+padding: 10px 0px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 10px;
+background: var(--paleta-no-imob-secundria-002, #358EB0);
+color: #FFF;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 3vh;
+font-style: normal;
+font-weight:600;
+line-height: 24px; /* 114.286% */
+  }
+  .button-p:hover{
+    background-color:var(--paleta-no-imob-secundria-002, #4aafd7);
+    transform: scale(1.05);
+  }
+  .btn-contact:hover .tooltip-noimob {
+    top: -45px;
+    opacity: 1;
+    transition-duration: .3s;
+  }
+  
+  .btn-contact:hover {
+    background-position: right;
+    transition-duration: .5s;
+  }
+  /*Dropdown*/
+  .accordion{
+    width: 100% !important;
+    
+   }
+    .accordion-button{
+      background: linear-gradient(90deg, rgb(8, 42, 80) 0%, rgb(21, 100, 112) 35%, rgba(35,153,178,1) 100%)
+      !important;    color: var(--w) !important;}
+      .accordion-button > svg > path{
+        fill: white;
+      }
+    /*Butões de contato para o pdp - FIM */
+
+  .a-noimob{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  /*Classes para cores*/
+  .w{
+    color: var(--w);
+  }
+  .bw{
+    background-color: var(--w);
+  }
+  .bg-2{
+    background-color: #DEE6E6;
+  }
+  .n4{
+    color: var(--n4)
+  }
+  .bn4{
+    background-color: var(--n4);
+  }
+  .n3{
+    color: var(--n3) !important;
+  }
+  .bn3{
+    background-color: var(--n3) !important;
+  }
+  .n6{
+    color: var(--n6) !important;
+  } 
+  .bn6{
+    background-color: var(--n6) !important;
+  }
+  .bcolor-gmail{
+    background-color: #c9c9c9 !important;
+  }
+  .bcolor-whats{
+    background-color:#3CCB25 !important;
+  }
+  .color-whatsapp{
+    color: #3CCB25 !important;
+  }
+  .color-whatsapp:hover{
+  background-color:#3CCB25 !important;
+  color:var(--w) !important; 
+
+  }
+  .color-whatsapp > svg > path{
+    width: 30vh !important;
+  
+  }
+  .color-whatsapp > svg > path:hover{
+    fill: var(--w);
+  }
+  /*Classes para tipos de imagens*/
+  .icon{
+    width:8vw;
+    height: 8vh;
+  }
+  /*CLASSES PARA FONTS*/
+  .bold{
+    font-weight: bold !important;
+  }
+  .regular{
+    font-weight:400 !important;
+  }
+  .col{
+    display: flex;
+    flex-direction: column !important;
+
+  }h1{
+    font-size: 3vw;
+  }
+  h2{
+    font-size: 2.5vw;
+  }
+  h3{
+    font-size: 2.2vw;
+  }
+  h4{
+    font-size: 2vw;
+  }
+  h5{
+    font-size: 1.8vw;
+  }
+  p{
+    font-size: 1vw;
+  }
+  span{
+    font-size: 1vw;
+  }
+
+  /*Estilização do carrossel padrão*/
+  .carousel-control-prev-icon {
+    background-image: url(../img/Seta-1.svg) !important;
+}
+.carousel-control-next-icon {
+  background-image: url(../img/Seta.svg) !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #f22828;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: .5;
+  transition: opacity .15s ease;
+}

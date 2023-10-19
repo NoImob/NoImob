@@ -1,0 +1,320 @@
+body{
+    position: relative;
+    width: 75vw;
+    height: 60vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #123F4E 0%, rgba(41, 86, 103, 0.65) 55.73%, rgba(91, 144, 157, 0.3) 89.61%, rgba(141, 171, 192, 0.1) 100%)
+,rgba(119, 208, 215, 0.71);
+}
+
+.box{  /*efeito onde ficar o box de login*/
+    position: absolute;
+    width: 71vw;
+    height: 42vw;
+    left: 25vh;
+    top: 21vh;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 19px #1A5173;
+    border-radius: 3vh;
+}
+
+.box > h1{ /*Texto: Entrar*/
+
+    position: absolute;
+    width: 40vh;
+    height: 10vh;
+    left: 6.2vh;
+    top: 5vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.5vh;
+    line-height: 4vh;
+    letter-spacing: 0.02vh;
+    color: #61BCC3;
+    font-weight: 10;
+    margin: 0;
+
+}
+
+.box > h3{ /*Texto: Gerenciamento, Praticidade e Segurança*/
+    position: absolute;
+    width: 40vh;
+    height: 7vh;
+    left: 6.5vh;
+    top: 8vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    line-height: 2.4vh;
+
+    display: flex;
+    align-items: center;
+    color: #1A5173;
+}
+  
+.InputBox{ /*coloca label dentro do box em ordem*/
+    box-sizing: border-box;
+    position: absolute;
+    width: 62.1vh;
+    height: 7.5vh;
+    fill: #f3f6f6;
+    stroke-width: 0.15vh;
+    stroke: #3593AA;
+    color: #0a0909;
+    font-size: 2.3vh;
+    left: 7.5vh;
+
+    border: 0.15vh solid #3593AA;
+    border-radius: 1.3vh;
+}
+
+.inputemail{ /*espaço entre o logo do email e as letras*/
+    padding-left: 7vh;
+    top: 17vh;
+}
+.inputsenha{ /*espaço entre o logo da senha e as letras*/
+    padding-left: 7vh;
+    top: 27.2vh;
+}
+
+.email{ /*Aqui fica o icone email*/
+    position: absolute;
+    left: 8.5vh;
+    top: 19vh;
+} 
+.senha{ /*Aqui fica o icone senha*/
+    position: absolute;
+    left: 8.5vh;
+    top: 29vh;
+} 
+
+.logoo{ /*Aqui fica a logo da empresa*/
+    position: absolute;
+    left: 110vh;
+    top:16vh;
+}
+
+.h2{ /*Que bom ter voçê de*/
+  position: absolute;
+  width: 29.13vw;
+  height: 7.2vw;
+  left: 76vh;
+  top: 2.5vh;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vh;
+  line-height: 20vh;
+  letter-spacing: 0.02vh;
+  color: #61BCC3;
+  font-weight: 10;
+  margin: 0;
+
+}
+  .h4{ /* fica o texto: volta!*/
+    position: absolute;
+    width: 29.13vh;
+    height: 5vh;
+    left: 93vh;
+    top: 18vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.5vh;
+    line-height: 4vh;
+    letter-spacing: 0.02vh;
+    color: #61BCC3;
+    font-weight: 10;
+    margin: 0;
+    }
+    
+.social{ /* fica a img do social*/
+position: absolute;
+left: 62vh;
+top: 25vh;
+}
+
+
+.Esenha{ /*aqui fica o texto: Esqueci minha senha*/
+
+position: absolute;
+width: 21vh;
+height: 3vh;
+left: 37.5vh;
+top: 35vh;
+font-style: normal;
+font-weight: 400;
+font-size: 2vh;
+line-height: 0.39vh;
+
+display: flex;
+align-items: center;
+color: #1A5173;
+}
+
+
+.registro{ /*Aqui fica o texto: Não tem conta ? Registre-se*/
+    position: absolute;
+    width: 28.30vw;
+    left: 3.3vh;
+    top: 50vh;
+    font-size: 2.5vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2.58vh 0vh;
+    text-align:center; 
+    cursor: pointer;   
+}
+.login nav a{
+    text-decoration: none;
+    color: #080808;  
+}
+.texto{ /*texto com o nome: Gerenciamento, Praticidade e Segurança*/
+    color: #3593AA;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+.h6{/*Aqui fica o texto: Ou*/
+    position: absolute;
+    width: 28vh;
+    left: 18vh;
+    top: 56vh;
+    font-size: 2.5vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2.5vh 0px;
+    text-align:center; 
+    cursor: pointer;   
+    color: #000000;
+}
+
+input{/*Aqui fica o input do email e da senha*/
+box-sizing: border-box;
+position: absolute;
+width: 26vw;
+height: 3.6vw;
+color: #000000;
+left: 6vh;
+top: 18.23vh;   
+background: #f7f8f8;
+border: 0.15vh solid #537B8D;
+border-radius: 1.06vh;
+}
+
+button.entrarbutton{ /* fica o botão entrar*/
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh 0vh;
+
+  position: absolute;
+  width: 26vw;
+  height: 4.07vw;
+  left: 6vh;
+  top: 41vh;
+  font-size: 2.7vh;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  background: #3593AA;
+  border: 0.15vh solid #3593AA;
+  border-radius: 1.06vh;
+  cursor: pointer;
+}
+
+button.face { /*botão do face e google*/
+    top: 64vh;
+    left: 6vh;
+    background: transparent;
+    position: relative;
+    padding: 0.4vh 2.73vh;
+    display: flex;
+    align-items: center;
+    font-size: 2.58vh;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0.15vh solid #1c5db8;
+    border-radius: 1.519vh;
+    outline: none;
+    overflow: hidden;
+    color: #0163E0;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+
+  button.google {
+    top: 56.6vh;
+    left: 33.7vh;
+    background: transparent;
+    position: relative;
+    padding: 0.4vh 4.40vh;
+    display: flex;
+    align-items: center;
+    font-size: 2.58vh;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0.15vh solid #1c5db8;
+    border-radius: 1.51vh;
+    outline: none;
+    overflow: hidden;
+    color: #0163E0;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+
+  button svg {
+    fill: #0163E0;
+    height: 1.8vw;
+    width: 1.8vw;
+  }
+  
+  button span {
+    margin: 1.51vh;
+  }
+  
+  button .google::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 40em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    
+    z-index: -1;
+  }
+ 
+  
+  button.face:hover {
+    color: #fcf9f9;
+    border: 1px solid #0163E0;
+    background-color: #0163E0;
+    transition: box-shadow 1.5s ease-out;
+  }
+
+  button.google:hover {
+    color: #e8ebf0;
+    border: 1px solid #3593AA;
+    background-color: #378f96;
+    transition: box-shadow 1.5s ease-out;
+  }
+  
+  button:hover svg {
+    fill: currentColor;
+  }
+  
+  button:hover::before {
+    box-shadow: inset 0 0 0 10em #494848;
+  }
+
+
+  

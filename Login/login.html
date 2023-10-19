@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylemenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=M+PLUS+Rounded+1c:wght@100;400;800&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Login - NoImob</title>
+    </head>
+
+    <body>
+        <header>
+
+             <!--menu que precisa ser atualizado-->
+
+            <a href="#" class="logo"><img  class="imglogo" src="assets/img/Logo.svg" alt=""><span>NoImob</span></a>
+            <ul class="navbar">
+                <li><a href="home.html" class="active"><img src="assets/img/Home.svg"></img> Home</a></li>
+                <li><a href="home.html" ><img src="assets/img/sobrenos.svg"></img> Sobre Nós</a></li>
+                <li><a href="home.html" >Contato</a></li>
+                <li><a href="home.html" >Serviços</a></li>
+            </ul>
+
+            <div class="main">
+                <a href="login.html" class="user"><img src="assets/img/Group 5.svg" alt=""></img>Entrar</a>
+                <a href="../View/Cadastro_locador.html"class="user">Cadastrar</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+
+            </div>
+        
+        </header>
+        <script type="text/javascript" src="assets/js/scriptmenu.js"></script>
+
+</head>
+<body>
+ 
+     <!--Título entrar-->
+
+    <div class="box">
+            <h1>Entrar</h1>
+            <h3>Gerenciamento, Praticidade e Segurança</h3>
+    
+    <!--Formulário (inputs)-->
+
+        <form action="">
+
+            <input class="inputemail" type="text" name="email" placeholder="Digite seu Email:">
+                <div class="email">
+                    <img src="assets/img/email.svg" width="24vw" height="24vh">
+                </div>
+
+            <input class="inputsenha" type="password" name="senha" id="senha" placeholder="Digite a Senha:">
+                <div class="senha">
+                   <img src="assets/img/cadeado.svg" width="23vw" height="23vh">
+                </div>
+               
+           
+                <!--butão de entrar que não está querendo pegar-->
+                <!--SOS alguém faz esse botão funcionar plis ( acho que ele tá bugado pq pra entrar com google ou face é um botão tbm)-->
+            
+                <button class="entrarbutton">
+                <a href="#"></a>
+                <span>Enviar</span>
+            </button>
+           
+
+        </form>
+
+         <!--Logo da empresa + texto "que bom ter você de volta!"-->
+
+        <div class="logoo">
+        <img src="assets/img/Logo.svg" width="60vw" height="70vh">
+        </div>
+
+        <div class="h2">Que bom ter você de  </div>
+        <div class="h4">volta! </div>
+        <div class="h6">Ou</div>
+
+        <a class="Esenha" href="#">Esqueci minha senha</a>
+
+         <!--Não tem uma conta? Registre-se (linkar com a tela de cadastro)-->
+
+        <div class="registro">
+            <nav>
+                <label> Não tem conta? <label class="texto"</label><a href="url"></a> Registre-se<label> 
+                <br><br>
+            </nav>
+        </div>
+
+         <!--imagem que está ao lado fo forms-->
+
+        <div class="social">
+            <img src="assets/img/Social strategy-pana 1.png" width="550vw" height="350vh">
+            </div>
+            
+         <!--butão pra entrar com o google e com o facebook (enfeite)-->
+
+            <button class="face">
+                <svg viewBox="0 0 16 16" class="bi bi-facebook" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+              </svg>
+                  <span>Facebook</span>
+              </button>
+
+             
+                <button class="google">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M27.2569 12.5519H26.25V12.5H15V17.5H22.0644C21.0338 20.4106 18.2644 22.5 15 22.5C10.8581 22.5 7.5 19.1419 7.5 15C7.5 10.8581 10.8581 7.5 15 7.5C16.9119 7.5 18.6513 8.22125 19.9756 9.39937L23.5112 5.86375C21.2787 3.78312 18.2925 2.5 15 2.5C8.09688 2.5 2.5 8.09688 2.5 15C2.5 21.9031 8.09688 27.5 15 27.5C21.9031 27.5 27.5 21.9031 27.5 15C27.5 14.1619 27.4137 13.3438 27.2569 12.5519Z" fill="#FFC107"/>
+                <path d="M3.94141 9.18188L8.04828 12.1938C9.15953 9.4425 11.8508 7.5 15.0002 7.5C16.912 7.5 18.6514 8.22125 19.9758 9.39937L23.5114 5.86375C21.2789 3.78312 18.2927 2.5 15.0002 2.5C10.1989 2.5 6.03516 5.21062 3.94141 9.18188Z" fill="#FF3D00"/>
+                <path d="M14.9992 27.5004C18.228 27.5004 21.1617 26.2648 23.3798 24.2554L19.5111 20.9817C18.2139 21.9682 16.6289 22.5017 14.9992 22.5004C11.748 22.5004 8.98734 20.4273 7.94734 17.5342L3.87109 20.6748C5.93984 24.7229 10.1411 27.5004 14.9992 27.5004Z" fill="#4CAF50"/>
+                <path d="M27.2569 12.5519H26.25V12.5H15V17.5H22.0644C21.5714 18.8853 20.6833 20.0957 19.51 20.9819L19.5119 20.9806L23.3806 24.2544C23.1069 24.5031 27.5 21.25 27.5 15C27.5 14.1619 27.4137 13.3438 27.2569 12.5519Z" fill="#1976D2"/>
+                </svg></path>
+                  </svg>
+                    <span>Google</span>
+                </button>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>

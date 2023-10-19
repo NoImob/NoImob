@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylemenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=M+PLUS+Rounded+1c:wght@100;400;800&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Cadastro Locador</title>
+
+    
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo"><img  class="imglogo" src="assets/img/Logo.svg" alt=""><span>NoImob</span></a>
+            <ul class="navbar">
+                <li><a href="home.html" class="active"><img src="assets/img/Home.svg"></img> Home</a></li>
+                <li><a href="home.html" ><img src="assets/img/sobrenos.svg"></img> Sobre Nós</a></li>
+                <li><a href="home.html" >Contato</a></li>
+                <li><a href="home.html" >Serviços</a></li>
+            </ul>
+
+            <div class="main">
+                <a href="Entrar.html" class="user"><img src="assets/img/Group 5.svg" alt=""></img>Entrar</a>
+                <a href="Cadastrar.html"class="user">Cadastrar</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+
+            </div>
+        
+        
+        
+        </header>
+    <!--js link-->
+    <script type="text/javascript" src="assets/js/scriptmenu.js"></script>
+
+<div class="navbarcadastros">
+       <a class="active" href="Cadastro_locador.html">Locador</a>
+       <a href="Cadastro_locatario.html">Locatário</a>
+    </div>
+    
+    <div class="main-login">
+        
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Cadastre-se</h1>
+                <h3>Gerenciamento, Praticidade e Segurança</h3>
+                <br>
+                <br>
+
+            
+            <form class="form" method="post" action="php/locador.php" enctype="multipart/form-data">
+               
+                <div class="textfield">
+                   <input type="text" name="nome" id="tab1" placeholder="Digite seu nome:">
+                </div>
+                
+                <div class="textfield">
+                   <input type="text" name="sobrenome" id="tab2" placeholder="Digite seu Sobrenome:" >
+                </div>
+
+                <div class="textfield">
+                   <input type="text" name="usuario" id="tab3" placeholder="Digite seu Usuário:">
+                </div>
+                
+                <div class="textfield">
+                    <input type="text" name="email" class="email" placeholder="Digite seu Email">
+                    <span class="textErrorEmail"></span>
+                </div>
+
+                <div class="textfield">
+                    <input type="file" name="foto" id="tab4" placeholder="Escolha uma foto:">
+                 </div>
+
+                <div class="textfield">
+                    <input type="password" name="senha" id="tab4" class="password" placeholder="Digite sua Senha:">
+                    
+                    <span class="textError"></span>
+                 </div>
+
+                <div class="textfield">
+                    <input type="password" name="confirmar" id="tab4" class="passwordConfirm" placeholder="Confirme sua Senha:">
+
+                    <span class="textErrorConfirm"></span>
+                  
+                </div>
+                
+                <div class="login">
+                    <nav>
+                        <label>Ao se registrar voce, aceita nossos <label class="texto" </label><a href="url"></a> termos de uso <label> e a 
+                            nossa</label> <label class="texto" </label><a href="url"></a> política de privacidade
+                        <br><br>
+                    </nav>
+                </div>
+
+                
+                
+                <input href="#" type="submit" id="botao" value="CADASTRAR" id="botao"/>
+              
+                    
+                
+            </form>
+
+            </div>
+        </div>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+   <script>
+    let password = document.querySelector(".password");
+    let passwordConfirm = document.querySelector(".passwordConfirm");
+    let email = document.querySelector(".email"); // Adicione um seletor para o campo de email
+    let textPassword = document.querySelector(".textError");
+    let textPasswordConfirm = document.querySelector(".textErrorConfirm");
+    let textEmail = document.querySelector(".textErrorEmail"); // Adicione um elemento para exibir mensagens de erro no campo de email
+
+    password.addEventListener('keyup', () => {
+        let senha = password.value;
+        if (!validatorPassword(senha)) {
+            textPassword.textContent = "A senha deve ter pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial (!@#$%^&*) e ter entre 6 e 16 caracteres.";
+            password.classList.add('border-error');
+        } else {
+            textPassword.textContent = "";
+            password.classList.remove('border-error');
+        }
+        if (senha === "") {
+            textPassword.textContent = "";
+        }
+    });
+
+    passwordConfirm.addEventListener('keyup', () => {
+        validarConfirmarSenha();
+    });
+
+    email.addEventListener('keyup', () => {
+        validarEmail(); // Chama a função de validação de email ao digitar no campo de email
+    });
+
+    function validatorPassword(password) {
+        let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+        return passwordPattern.test(password);
+    }
+
+    function validarConfirmarSenha() {
+        if (passwordConfirm.value !== password.value) {
+            textPasswordConfirm.textContent = "A senha não coincide";
+            passwordConfirm.classList.add('border-error');
+        } else {
+            textPasswordConfirm.textContent = "";
+            passwordConfirm.classList.remove('border-error');
+        }
+    }
+
+    function validarEmail() {
+        let emailValue = email.value;
+        if (!emailValue.includes('@')) {
+            textEmail.textContent = "O email deve conter o caractere '@'.";
+            email.classList.add('border-error');
+        } else {
+            textEmail.textContent = "";
+            email.classList.remove('border-error');
+        }
+    }
+</script>
+
+</body>
+</html> 
